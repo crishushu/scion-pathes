@@ -1,0 +1,213 @@
+load: engine.js
+[INFO] Sun Jul 06 2014 14:25:43 GMT+0200 (CEST) scion engine loaded
+[INFO] Sun Jul 06 2014 14:25:45 GMT+0200 (CEST) { 'n0::n3': { pathes: [], type: '', name: 'Start' },
+  'n0::n4': { pathes: [ 'start' ], type: 'callout', name: 'sessions' },
+  'n0::n2::n9': 
+   { pathes: [ 'start', 'success' ],
+     type: 'callout',
+     name: 'phones' },
+  'n0::n0::n0': { pathes: [ 'start', 'notFound' ], type: 'menu', name: 'Home' },
+  'n0::n2::n2::n5': 
+   { pathes: [ 'start', 'success', 'postpaid' ],
+     type: 'menu',
+     name: 'Bills' },
+  'n0::n2::n1::n3': 
+   { pathes: [ 'start', 'success', 'prepaid' ],
+     type: 'input',
+     name: 'Balance' },
+  'n0::n0::n2': 
+   { pathes: [ 'start', 'notFound', 'goToLogin' ],
+     type: 'input',
+     name: 'Login' },
+  'n0::n0::n1': 
+   { pathes: [ 'start', 'notFound', 'goToSignUp' ],
+     type: 'input',
+     name: 'SignUp' },
+  'n0::n1::n3': 
+   { pathes: [ 'start', 'notFound', 'goToQuickTopup' ],
+     type: 'input',
+     name: 'QuickTopup' },
+  'n0::n2::n2::n3': 
+   { pathes: [ 'start', 'success', 'postpaid', 'goToPayment' ],
+     type: 'input',
+     name: 'Payment' },
+  'n0::n2::n7': 
+   { pathes: [ 'start', 'success', 'postpaid', 'goToNewPhoneNumber' ],
+     type: 'input',
+     name: 'NewPhoneNumber' },
+  'n0::n2::n10': 
+   { pathes: [ 'start', 'success', 'postpaid', 'logout' ],
+     type: 'callout',
+     name: 'sessions' },
+  'n0::n2::n1::n2': 
+   { pathes: [ 'start', 'success', 'prepaid', 'validated.submitTopup' ],
+     type: 'callout',
+     name: 'topup' },
+  'n0::n2::n0::n3': 
+   { pathes: [ 'start', 'success', 'prepaid', 'goToOtherTopup' ],
+     type: 'input',
+     name: 'OtherTopup' },
+  'n0::n0::n3': 
+   { pathes: [ 'start', 'notFound', 'goToLogin', 'validated.submitLogin' ],
+     type: 'callout',
+     name: 'sessions' },
+  'n0::n0::n4': 
+   { pathes: [ 'start', 'notFound', 'goToSignUp', 'validated.submitSignup' ],
+     type: 'callout',
+     name: 'users' },
+  'n0::n1::n2': 
+   { pathes: 
+      [ 'start',
+        'notFound',
+        'goToQuickTopup',
+        'validated.submitQuickTopup' ],
+     type: 'callout',
+     name: 'topup' },
+  'n0::n2::n2::n4': 
+   { pathes: 
+      [ 'start',
+        'success',
+        'postpaid',
+        'goToPayment',
+        'goToConfirmation' ],
+     type: 'menu',
+     name: 'Confirmation' },
+  'n0::n2::n5': 
+   { pathes: 
+      [ 'start',
+        'success',
+        'postpaid',
+        'goToNewPhoneNumber',
+        'validated.submitPhoneNumber' ],
+     type: 'callout',
+     name: 'phones' },
+  'n0::n2::n8': 
+   { pathes: [ 'start', 'success', 'postpaid', 'goToNewPhoneNumber', 'cancel' ],
+     type: 'callout',
+     name: 'phones' },
+  'n0::n2::n1::n0': 
+   { pathes: 
+      [ 'start',
+        'success',
+        'prepaid',
+        'validated.submitTopup',
+        'success' ],
+     type: 'presentation',
+     name: 'TopupSuccess' },
+  'n0::n2::n1::n1': 
+   { pathes: 
+      [ 'start',
+        'success',
+        'prepaid',
+        'validated.submitTopup',
+        'failed' ],
+     type: 'presentation',
+     name: 'TopupFailure' },
+  'n0::n2::n0::n0': 
+   { pathes: 
+      [ 'start',
+        'success',
+        'prepaid',
+        'goToOtherTopup',
+        'validated.submitTopup' ],
+     type: 'callout',
+     name: 'topup' },
+  'n0::n2::n4': 
+   { pathes: 
+      [ 'start',
+        'notFound',
+        'goToLogin',
+        'validated.submitLogin',
+        'incompleteAccount' ],
+     type: 'input',
+     name: 'LinkingCode' },
+  'n0::n1::n0': 
+   { pathes: 
+      [ 'start',
+        'notFound',
+        'goToQuickTopup',
+        'validated.submitQuickTopup',
+        'success' ],
+     type: 'presentation',
+     name: 'QuickTopupSuccess' },
+  'n0::n1::n1': 
+   { pathes: 
+      [ 'start',
+        'notFound',
+        'goToQuickTopup',
+        'validated.submitQuickTopup',
+        'failed' ],
+     type: 'presentation',
+     name: 'QuickTopupFailure' },
+  'n0::n2::n2::n2': 
+   { pathes: 
+      [ 'start',
+        'success',
+        'postpaid',
+        'goToPayment',
+        'goToConfirmation',
+        'validated.submitConfirmation' ],
+     type: 'callout',
+     name: 'payment' },
+  'n0::n2::n0::n2': 
+   { pathes: 
+      [ 'start',
+        'success',
+        'prepaid',
+        'goToOtherTopup',
+        'validated.submitTopup',
+        'success' ],
+     type: 'menu',
+     name: 'OtherTopupSuccess' },
+  'n0::n2::n0::n1': 
+   { pathes: 
+      [ 'start',
+        'success',
+        'prepaid',
+        'goToOtherTopup',
+        'validated.submitTopup',
+        'failed' ],
+     type: 'menu',
+     name: 'OtherTopupFailure' },
+  'n0::n2::n3': 
+   { pathes: 
+      [ 'start',
+        'notFound',
+        'goToLogin',
+        'validated.submitLogin',
+        'incompleteAccount',
+        'validated.submitLink' ],
+     type: 'callout',
+     name: 'links' },
+  'n0::n2::n6': 
+   { pathes: 
+      [ 'start',
+        'notFound',
+        'goToLogin',
+        'validated.submitLogin',
+        'incompleteAccount',
+        'cancel' ],
+     type: 'callout',
+     name: 'links' },
+  'n0::n2::n2::n0': 
+   { pathes: 
+      [ 'start',
+        'success',
+        'postpaid',
+        'goToPayment',
+        'goToConfirmation',
+        'validated.submitConfirmation',
+        'success' ],
+     type: 'presentation',
+     name: 'PaymentSuccess' },
+  'n0::n2::n2::n1': 
+   { pathes: 
+      [ 'start',
+        'success',
+        'postpaid',
+        'goToPayment',
+        'goToConfirmation',
+        'validated.submitConfirmation',
+        'failed' ],
+     type: 'presentation',
+     name: 'PaymentFailure' } }
