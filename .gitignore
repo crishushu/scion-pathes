@@ -1,6 +1,7 @@
 node_modules
 Icon*
 gitignore
+Icon?*
 
 # global
 *.bak
