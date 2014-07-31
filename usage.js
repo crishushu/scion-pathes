@@ -1,14 +1,19 @@
-var pathes = require('./lib/pathgen');
-var console = require('umd-logger');
+(function(global, factory) {
+    if (typeof module === 'object') {
+        factory(require('umd-logger'), require('./lib/pathgen'));
+    } else if (typeof define === 'function' && define.amd) {
+        define(['umd-logger', 'pathgen'], factory);
+    } else {
+        factory(umd_logger, pathgen);
+    }
+})(this, function(console, pathgen) {
+    var url = (typeof module === 'object') ? 'http://localhost:9989/example-scxml.xml': 'http://localhost:5951/scxml/docs/example-scxml.xml';
 
-function cb(result) {
-    var pathes = result.data;
-    var engine = result.scion;
-    console.info(pathes);
-    engine.ignoreScript();
-    engine.start();
-}
-
-var url = 'http://localhost:9989/scxmlFromMultirep2.xml';
-var url = 'http://localhost:9989/telcoPortal-scxmlFromMultirep.xml';
-pathes(url, cb);
+    pathgen.init(url).start(function(result){
+        var pathes = result.data;
+        var engine = result.scion;
+        console.info(pathes);
+        engine.evaluateScript();
+        engine.start();
+    });
+});

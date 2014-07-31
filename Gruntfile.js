@@ -2,8 +2,8 @@
 module.exports = function(grunt) {
     grunt.initConfig({
         npmEnv: '/Users/crishushu/GoogleDrive/src/node_modules/', // path to node_modules folder
-        debugPort: '5959', // debugger port
-        connectPort: 35729, // connector port
+        debugPort: '5951', // debugger port
+        connectPort: 35721, // connector port
         base: '.', // path to index
         watch: {
             refresh: {
