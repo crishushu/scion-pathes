@@ -5,6 +5,7 @@ Icon?*
 Icon?
 .rebooted
 .jshintrc
+.bin/
 
 # global
 *.bak
