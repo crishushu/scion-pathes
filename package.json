@@ -1,6 +1,6 @@
 {
   "name": "scion-pathes",
-  "description": "Todo",
+  "description": "Shortest path calculation of state nodes in SCION-based (creator is Jacob Beard) SCXML models",
   "version": "0.1.0",
   "homepage": "https://github.com/crishushu/scion-pathes",
   "author": {
