@@ -3,6 +3,8 @@ Icon*
 gitignore
 Icon?*
 Icon?
+.rebooted
+.jshintrc
 
 # global
 *.bak
